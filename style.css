@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+
+
+}
+
+body {
+  background-image: linear-gradient(rgb(250, 250, 250) 50%, rgb(248, 248, 248) 15%, rgb(235, 235, 235) 15%, rgb(243, 245, 247) 15%);
+}
+
+section {
+  margin-top: 2rem;
+}
+
+.cm-about1-bg {
+
+
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about {
+
+  font-size: 28px;
+  letter-spacing: 6px;
+  line-height: 4rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  vertical-align: 8.2px;
+  margin-bottom: 15px;
+
+}
+
+.card-img-top {
+  height: 10rem;
+}
+
+.club-text {
+
+  font-size: 23px;
+  letter-spacing: 6px;
+  line-height: 49px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  vertical-align: 8.2px;
+  margin-bottom: 22px;
+
+}
+
+.about-text {
+  font-weight: 400;
+  align-content: center;
+  text-align: justify;
+  margin-bottom: 2rem;
+
+}
+
+.card:hover {
+  background-color: #575c22;
+  color: white !important;
+  transform: scale(1.02) perspective(0px);
+  box-shadow: 4px 4px 4px rgba(60, 60, 93, 0.33)
+}
+
+.card-title,
+.card-text {
+  display: flex;
+  justify-content: flex-start;
+  text-align: justify;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  font-weight: 400;
+}
+
+.btn-card {
+
+  justify-content: flex-start;
+  text-align: justify;
+
+}
+
+.nav-item:hover {
+
+  transform: scale(1.08) perspective(0px);
+  box-shadow: 8px 8px 8px rgba(60, 60, 93, 0.33)
+}
+
+.nav-item {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.photo-gallery {
+  color: #313437;
+  background-color: #fff;
+}
+
+.photo-gallery p {
+  color: #7d8285;
+}
+
+.photo-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width:767px) {
+  .photo-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.photo-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom: 0;
+}
+
+.photo-gallery .photos {
+  padding-bottom: 20px;
+}
+
+.photo-gallery .item {
+  padding-bottom: 30px;
+}
+.photos img{
+  width: auto;
+  height: 100%;
+}
+
+.item img:hover {
+  transform: scale(1.05) perspective(0px);
+  box-shadow: 8px 8px 8px rgba(60, 60, 93, 0.33)
+}
+
+footer {
+  background-image: url('http://www.sportsclub-gujarat.com/wp-content/uploads/2020/12/footer_bg.png');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.footer-contact{
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.img-aqua {
+  max-width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 160px;
+  box-shadow: 0px 4px 15px rgb(0 0 0 / 10%);
+  object-fit: cover;
+}
+
+.img-div img {
+  width: 100%;
+
+}
+
+.aqua-div {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #0191DC;
+  margin-top: 0;
+
+
+}
+
+.table-responsive {
+  overflow: auto;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.table-responsive table {
+  width: 100%;
+}
+
+table {
+  border-collapse: separate !important;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+td,
+th {
+  padding: 6px !important;
+  border: 1px solid rgb(115, 98, 98) !important;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s !important;
+
+}
+
+th {
+  background: #0191DC;
+  color: white;
+  font-weight: bold;
+  text-align: center !important;
+}
+
+tbody {
+  display: table-row-group !important;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr:hover {
+  background-color: #f3ecec !important;
+}
+
+.form-bg {
+  background-color: rgb(171, 244, 244);
+}
+
+:target {
+  scroll-margin-top: 3rem;
+}

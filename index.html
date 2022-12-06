@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Club-All sports camp</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light shadow-lg p-2 mb-4 bg-body rounded sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#">
+        <img src="./images/logo.png" alt="Sports Club" width="60"
+          height="60" class="rounded-circle img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item rounded-pill">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item rounded-pill">
+            <a class="nav-link active" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item rounded-pill">
+            <a class="nav-link active" href="#about_us">About Us</a>
+          </li>
+          <li class="nav-item rounded-pill">
+            <a class="nav-link active" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown rounded-pill">
+            <a class="nav-link dropdown-toggle active" id="activity-nav" href="#activity" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Activities
+            </a>
+            <ul class="dropdown-menu" id="activity-menu">
+              <li><a class="dropdown-item" href="./components/aqua.html">Aqua Point</a></li>
+              <li><a class="dropdown-item" href="./components/badminton.html">Badminton</a></li>
+              <li><a class="dropdown-item" href="./components/bil.html">Billiards</a></li>
+              <li><a class="dropdown-item" href="./components/body.html">Body Zone</a></li>
+              <li><a class="dropdown-item" href="./components/card.html">Card Room</a></li>
+              <li><a class="dropdown-item" href="./components/cricket.html">Cricket</a></li>
+              <li><a class="dropdown-item" href="./components/theatre.html">Theatre</a></li>
+              <li><a class="dropdown-item" href="./components/theatre.html">Table Tennis</a></li>
+              <li><a class="dropdown-item" href="./components/music.html">Music</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+        <div class="mx-1">
+          <button class="btn btn-outline-danger mx-2" data-toggle="modal" data-target="#loginModal">LogIn</button>
+          <button class="btn btn-outline-success mx-2" data-toggle="modal" data-target="#signupModal">SignUp</button>
+
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+  <!--login Modal -->
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">LogIn Here</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput11" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleFormControlTextarea11"></input>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary " id="log">Log In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Sign Up Here</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="example0FormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="example0FormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="example1FormControlTextarea1" class="form-label">Password</label>
+            <input class="form-control" id="example1FormControlTextarea1" type="password"></input>
+          </div>
+          <div class="mb-3">
+            <label for="example2FormControlTextarea1" class="form-label">Confirm Password</label>
+            <input class="form-control" id="example2FormControlTextarea1" type="password"></input>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- continue  -->
+  <div>
+    <marquee direction="ltr">
+      <span class="text-dark fw-bold">
+        Members are requested to register their email ID with the Club
+        immediately, mentioning name & membership no. to receive
+        communication promptly, if not done so.
+      </span>
+    </marquee>
+  </div>
+  <div class="my-1 ">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" data-interval="1000"
+      data-mdb-interval="1000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner" data-mdb-interval="10000">
+        <div class="carousel-item active " data-mdb-interval="1000">
+          <img src="./images/gallery/s-1.jpg" class="slide-img img-fluid" alt="" width="100%" height="400px" />
+        </div>
+        <div class="carousel-item " data-mdb-interval="1000">
+          <img src="./images/gallery/s-2.jpg" class="slide-img img-fluid" alt="" width="100%" height="400px" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <section class="p-0" id="activity">
+    <div class="my-3">
+      <p class="justify-content-center d-flex text-dark about">
+        <b>SPORTS CLUB</b>
+      </p>
+      <p class="justify-content-center d-flex text-success club-text">
+        ACTIVITIES
+      </p>
+      <div class="container-fluid mb-4">
+        <div class="row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+          <div class="col-sm-1 mt-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="./images/activity-img/aqua.png "
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Aqua Point</h5>
+                <p class="card-text">Sports Club houses a huge swimming pool where...</p>
+                <a href="./components/aqua.html" class="btn btn-outline-info">Learn More <strong>&#8594;</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 mt-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="./images/activity-img/badminton.png "
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Badminton</h5>
+                <p class="card-text">The Badminton court at Sports club is not less...</p>
+                <a href="./components/badminton.html" class="btn btn-outline-info">Learn More
+                  <strong>&#8594;</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 mt-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="./images/activity-img/billiards.png "
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Billiards</h5>
+
+                <p class="card-text">Centrally air-conditioned Billiards room equipped...</p>
+                <a href="./components/bil.html" class="btn btn-outline-info">Learn More <strong>&#8594;</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 mt-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="./images/activity-img/body.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Body Zone</h5>
+                <p class="card-text">We have incorporated a well equipped health club for... </p>
+                <a href="./components/body.html" class="btn btn-outline-info">Learn More <strong>&#8594;</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 mt-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="./images/activity-img/card.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card Room</h5>
+                <p class="card-text">A room specially dedicated to the card connoisseurs of...</p>
+                <a href="./components/card.html" class="btn btn-outline-info">Learn More <strong>&#8594;</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 mt-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="./images/activity-img/cricket.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Cricket</h5>
+                <p class="card-text">Day Night T20 Tennis Ball Cricket Tournament... </p>
+                <a href="./components/cricket.html" class="btn btn-outline-info">Learn More <strong>&#8594;</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 mt-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="./images/activity-img/theatre.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Home Theatre</h5>
+                <p class="card-text">Home Theatre is a place where DVDs of old movies, recent...</p>
+                <a href="./components/theatre.html" class="btn btn-outline-info">Learn More <strong>&#8594;</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 mt-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="./images/activity-img/open-th.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Open Air Theatre</h5>
+                <p class="card-text">Latest Blockbusters will be screened at the Club Lawns...</p>
+                <a href="./components/theatre.html" class="btn btn-outline-info">Learn More <strong>&#8594;</strong></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-1 mt-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="./images/activity-img/tns.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Table Tennis</h5>
+                <p class="card-text">A well equipped and air-conditioned table tennis room, with...</p>
+                <a href="./components/table.html" class="btn btn-outline-info">Learn More <strong>&#8594;</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 mt-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="./images/activity-img/music.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Music</h5>
+                <p class="card-text">Music room in the New Sports complex is a place to enjoy in... </p>
+                <a href="./components/music.html" class="btn btn-outline-info">Learn More <strong>&#8594;</strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="about_us">
+    <div class="my-1">
+      <div class="cm-about1-bg">
+        <div class="container">
+          <p class="justify-content-center d-flex text-dark about">
+            <b>ABOUT</b>
+          </p>
+          <p class="justify-content-center d-flex text-center text-success club-text container-fluid">
+            SPORTS CLUB
+          </p>
+          <div class="about-text">
+            Every dream needs to be driven by passion to make it come true.
+            Sports Club is one such dream, formed by keeping sheer passion
+            for the gentleman’s game-Cricket. Sports Club was conceived by a
+            group of people headed by Sadique Mobarak Azmi; the then Mayor
+            and leading businessman from Bihar in 2022.
+            <br />
+            <br />
+            The Sports Club gets its flamboyant and elegant design in the
+            heart of city from the renowned architect Charles Correa who
+            also happens to be the designer of the soulful Gandhi Ashram.
+            With a beautiful design and sprawling space; Sports Club has
+            gradually spread its branches for other sports and has become an
+            epitome of entertainment and leisure in the thriving city of
+            Bihar. Today, Sports Club is one of the most regal clubs of
+            Bihar and renowned for its state of the art amenities and
+            splendid aura.
+          </div>
+          <div class="album">
+            <img src="./images/album.png" alt="" class="img-fluid img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <p class="justify-content-center d-flex text-dark about">
+      <b>PHOTO</b>
+    </p>
+    <p class="justify-content-center d-flex text-center text-success club-text ">
+      GALLERY</p>
+    <!-- bootstrap image gallery 1 -->
+    <div class="photo-gallery">
+      <div>
+
+        <div class="row photos m-0">
+
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-1.jpg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-1.jpg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-2.jpg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-2.jpg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-3.jpg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-3.jpg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-4.jpg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-4.jpg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-5.jpeg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-5.jpeg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-6.jpeg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-6.jpeg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-7.jpeg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-7.jpeg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-8.jpeg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-8.jpeg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-9.jpeg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-9.jpeg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-14.jpeg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-14.jpeg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-12.jpeg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-12.jpeg" alt="image"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/gallery/p-13.jpeg" data-lightbox="photos"><img
+                class="img-fluid" src="./images/gallery/p-13.jpeg" alt="image"></a></dc:\Users\yogir\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmliv>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <footer class="m-0" id="contact">
+    <p class="justify-content-center d-flex text-dark about">
+      <b>CONTACT US</b>
+    </p>
+
+    <div class="foot-img justify-content-between d-flex footer-contact">
+      <div class="bg-info container-fluid container w-100 rounded-2 m-5 p-4">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ex: name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput2">Subject</label>
+            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="ex: Enquiry related">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Feedback</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <div class="d-flex justify-content-center bg-secondary">
+      copyrights reserved
+    </div>
+  </footer>
+
+
+  <!-- JavaScript Bundle with Popper -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+
+</body>
+
+</html>
