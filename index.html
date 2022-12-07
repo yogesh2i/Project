@@ -18,7 +18,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-light shadow-lg p-2 mb-4 bg-body rounded sticky-top">
+  <nav class="navbar navbar-expand-lg bg-body shadow-lg p-2 mb-4  sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand " href="#">
         <img src="./images/logo.png" alt="Sports Club" width="60"
@@ -89,12 +89,14 @@
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput11" placeholder="name@example.com">
+            <label for="emain-input" class="form-label" >Email address</label>
+            <input type="email" class="form-control" id="email-input" placeholder="name@example.com" required >
+            <p style="color: red;display: none" id="valid">Please enter a valid email</p>
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleFormControlTextarea11"></input>
+            <label for="pswd" class="form-label" >Password</label>
+            <input type="password" class="form-control" id="pswd" required></input>
+            <p style="color: red;display: none" id="pass-valid">Please enter a valid password more than 3  characetrs.</p>
           </div>
         </div>
         <div class="modal-footer">
@@ -158,10 +160,10 @@
       </div>
       <div class="carousel-inner" data-mdb-interval="10000">
         <div class="carousel-item active " data-mdb-interval="1000">
-          <img src="./images/gallery/s-1.jpg" class="slide-img img-fluid" alt="" width="100%" height="400px" />
+          <img src="./images/gallery/s-2.jpg" class="slide-img img-fluid" alt="" width="100%" height="400px" />
         </div>
         <div class="carousel-item " data-mdb-interval="1000">
-          <img src="./images/gallery/s-2.jpg" class="slide-img img-fluid" alt="" width="100%" height="400px" />
+          <img src="./images/gallery/s-1.jpg" class="slide-img img-fluid" alt="" width="100%" height="400px" />
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -397,23 +399,27 @@
     <p class="justify-content-center d-flex text-dark about">
       <b>CONTACT US</b>
     </p>
+    
+    
 
     <div class="foot-img justify-content-between d-flex footer-contact">
-      <div class="bg-info container-fluid container w-100 rounded-2 m-5 p-4">
+      <div class="contact-bg container-fluid container w-100 rounded-2 p-4 h-100">
         <form>
           <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ex: name@example.com">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your good name">
           </div>
           <div class="form-group">
-            <label for="exampleFormControlInput2">Subject</label>
-            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="ex: Enquiry related">
+            <label for="exampleFormControlInput3">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="ex: name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput2">Number</label>
+            <input type="number" class="form-control" id="exampleFormControlInput2" >
           </div>
 
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Feedback</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+
+          
           <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-primary mt-3">Submit</button>
 
@@ -422,6 +428,8 @@
       </div>
 
     </div>
+    <iframe style="width: 100%;" src="https://maps.google.com/maps?q=Lovely%20Professional%20University&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" frameborder="0" allowfullscreen="" class="cm-title-img"></iframe>
+
     <div class="d-flex justify-content-center bg-secondary">
       copyrights reserved
     </div>

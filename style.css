@@ -4,12 +4,12 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
-
-
+  filter: saturate(110%);
+ 
 }
 
-body {
-  background-image: linear-gradient(rgb(250, 250, 250) 50%, rgb(248, 248, 248) 15%, rgb(235, 235, 235) 15%, rgb(243, 245, 247) 15%);
+.carousel-item :hover{
+  animation: card-effect 0.5s  1 ease-in-out;
 }
 
 section {
@@ -44,6 +44,7 @@ section {
 
 .card-img-top {
   height: 10rem;
+
 }
 
 .club-text {
@@ -67,11 +68,18 @@ section {
 }
 
 .card:hover {
-  background-color: #575c22;
   color: white !important;
-  transform: scale(1.02) perspective(0px);
-  box-shadow: 4px 4px 4px rgba(60, 60, 93, 0.33)
+  animation: card-effect 0.5s  1 ease-in-out;
+  background-color: #3cba47;
 }
+@keyframes card-effect {
+  40%{
+    transform: scale(1.02) perspective(0px);
+    box-shadow: 4px 4px 4px rgba(60, 60, 93, 0.33)
+  }
+
+  }
+
 
 .card-title,
 .card-text {
@@ -96,9 +104,8 @@ section {
 }
 
 .nav-item:hover {
-
-  transform: scale(1.08) perspective(0px);
-  box-shadow: 8px 8px 8px rgba(60, 60, 93, 0.33)
+  animation: card-effect 0.5s  1 ease-in-out;
+ 
 }
 
 .nav-item {
@@ -153,21 +160,32 @@ section {
 }
 
 .item img:hover {
-  transform: scale(1.05) perspective(0px);
-  box-shadow: 8px 8px 8px rgba(60, 60, 93, 0.33)
+  animation: card-effect 0.8s  1 ease-in;
 }
 
-footer {
-  background-image: url('http://www.sportsclub-gujarat.com/wp-content/uploads/2020/12/footer_bg.png');
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
+.contact-bg{
+  background-color:rgb(9, 147, 66);
+  opacity: 0.8;
+    
 }
 .footer-contact{
+  color: white;
   flex-wrap: wrap;
   align-content: center;
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 450px;
+  z-index: 2;
+}
+.form-group input{
+  color: white !important;
+  outline: none !important;
+  border: none !important;
+  background-color:rgb(168, 223, 191) !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .img-aqua {
@@ -244,7 +262,7 @@ tr:hover {
 }
 
 .form-bg {
-  background-color: rgb(171, 244, 244);
+  background-color: rgb(195, 212, 212);
 }
 
 :target {
